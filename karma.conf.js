@@ -37,7 +37,11 @@ module.exports = function (config) {
     autoWatch: false,
 
     // if true, Karma exits after running the tests.
-    singleRun: true
+    singleRun: true,
+
+    client: {
+      captureConsole: true
+    }
 
   });
 };
