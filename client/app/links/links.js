@@ -8,5 +8,4 @@ angular.module('shortly.links', [])
       $scope.data.links = urls;
     }
   });
-
 });

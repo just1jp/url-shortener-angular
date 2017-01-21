@@ -1,6 +1,16 @@
+<div class='navigation'>
+<ul>
+  <li><a href='#/links' class='index'>All Links</a></li>
+  <li><a href='#/shorten' class='create'>Shorten</a></li>
+</ul>
+  <a href='/logout' class='logout'>Logout</a>
+</div>
 <div id='container'>
-<!-- Your code here -->
-
+  <form>
+    <input class='text' type='text' name='url' ng-change='urlCheck(url)' ng-model='url' ng-class='{urlError: urlError}'>
+    <span ng-class='{errorMessage: errorMessage}' style="display:none;">That ain't right. Fix dat URL.</span>
+    <input type='submit' value='Shorten' ng-click='addLink(url)'>
+  </form>
 </div>
 
 
